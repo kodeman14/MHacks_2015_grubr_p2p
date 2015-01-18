@@ -14,11 +14,11 @@
 	h1{
 		font-size: 5em;
 		font-family: 'Raleway', sans-serif;
-		color: #fff;
+		color: red;
 		margin:0;
 	}
 	.intro p{
-		color: #fff;
+		color: red;
 	}
 
 	/* Centered texts in each section
@@ -31,9 +31,20 @@
 	/* Bottom menu
 	* --------------------------------------- */
 	#infoMenu li a {
-		color: #fff;
+		//color: #fff;
 	}
-	</style>
+        
+    #section0 {
+        background-image:url("img/astro.jpg");
+        background-size: cover;
+    }
+    .features {
+        font-size: 50px;
+    }
+    input {
+        font-size: 30px;
+    }
+	</style>    
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -59,39 +70,50 @@
 
 
 <ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Intro Slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Features Page</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Sign Up</a></li>
 </ul>
 
 <div id="fullpage">
 	<div class="section " id="section0">
 		<div class="intro">
-			<img src="imgs/1.png"  alt="1"/>
-			<h1>Normal scrolling</h1>
-			<p>With a linked menu</p>
+			<h1>P2P Delivery</h1>
+			<p>Sit Back. Relax. Have a Drink</p>
 		</div>
 	</div>
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1">
 			<div class="intro">
-				<h1>URL get updated (#)</h1>
-				<p>
-					Easy to bookmark and share
-				</p>
+				<h1>Current Features</h1>
+				<ul class="features">
+                    <li>Request delivery</li>
+                    <li>Confirm delivery</li>
+                    <li>Locating other users</li>
+                    <li>Providing Feedback</li>
+                </ul>
 			</div>
 		</div>
 
 	    <div class="slide" id="slide2">
-			<h1>Horizontal sliders!</h1>
-			<img src="imgs/iphone-blue.png" alt="iphone" id="iphone-two" />
+			<h1>Upcoming Features</h1>
+            <ul class="features">
+                <li>Friend Referral</li>
+                <li>Pay through Venmo</li>
+                <li>Using Maps to find Services</li>
+                <li>Loyalty Points towards Products</li>
+                <li>Rating System for Ninjas</li>
+            </ul>
 		</div>
 
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
-			<h1>Just use </h1>
-			<p>autoScrolling:false</p>
+			<h1>Sign Up (Currently in Beta)</h1><br />
+			<form action="//formspree.io/affansajid@gmail.com">
+                <input type="email" name="_replyto" placeholder="Enter Your Email Here">
+                <input type="submit" value="Submit">
+            </form>
 		</div>
 	</div>
 </div>

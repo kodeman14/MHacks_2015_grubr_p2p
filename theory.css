@@ -20,3 +20,8 @@
 .parallax__layer--deep {
   transform: translateZ(-2px) scale(3);
 }
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
